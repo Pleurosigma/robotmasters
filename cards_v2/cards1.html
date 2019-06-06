@@ -1,0 +1,357 @@
+<html>
+<head>
+<style>
+body{
+  width: 8.5in;
+  font-size: 0;
+  font-family: Helvetica;
+}
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  vertical-align: top;
+}
+div.card {
+  width: 1.625in;
+  height: 2.5in;
+  border: 1px solid #2d3436;
+  border-radius: .1in;
+  padding: .1in;
+}
+
+span.title {
+  font-size: .12in;
+  font-weight: bold;
+}
+
+div.image-container {
+  border: 1px solid #dfe6e9;
+  width: 1.425in;
+  height: .75in;
+  margin-bottom: .1in;
+}
+
+div.image-container span {
+  display: block;
+  width: 100%;
+  font-size: .1in;
+  font-style: italic;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.text-container {
+  border: 1px solid #dfe6e9;
+  width: 1.425in;
+  height: 1.25in;
+  font-size: .13in;
+  color: #2d3436;
+  position: relative;
+}
+
+div.text-container span.lower-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.text-container span.lower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+div.text-container span.uses {
+  color: #2d3436;
+}
+
+div.text-container span.power {
+  color: #2d3436;
+}
+
+div.text-container p {
+  margin: 0;
+}
+
+</style>
+</head>
+<body>
+<div class='card'>
+  <span class='title'>
+    Plasma Cannon
+  </span>
+  <div class='image-container'>
+    <span>A small arm cannon firing yellow plasma bolts.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Arm
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;&#9632;</span></span>
+    <p>
+      Standard Action.
+    </p>
+    <p>
+      Range 6 attack.
+    </p>
+    <p>
+      Roll 1 die per power.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Shield
+  </span>
+  <div class='image-container'>
+    <span>A small shield disc. Generates a weak blue field.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Shield
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Gain 2 max shield per power.
+    </p>
+    <p>
+      Regen 1 shield per turn
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Reactor
+  </span>
+  <div class='image-container'>
+    <span>A weak general purpose reactor.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Reactor
+    </span>
+    <p>
+      Gain 6 max power.
+    </p>
+    <p>
+      Capacitance 1.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Starter Armor
+  </span>
+  <div class='image-container'>
+    <span>A light cheap alloy.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Armor
+    </span>
+    <span class='lower-right'><span class='power'></span></span>
+    <p>
+      Gain 1 Armor with DR 1.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Bomb Fab
+  </span>
+  <div class='image-container'>
+    <span>An arm mounted bomb fabricator.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#9679;&#9679;</span>&nbsp;Arm
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Standard Action.
+    </p>
+    <p>
+      Requires full power
+    </p>
+    <p>
+      Range 6 burst 1 attack.
+    </p>
+    <p>
+      Roll 5 dice.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Frame
+  </span>
+  <div class='image-container'>
+    <span>A basic well rounded frame.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'></span>Frame
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <span class='lower-right'><span class='power'></span></span>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Heavy Armor
+  </span>
+  <div class='image-container'>
+    <span>A large bulky armor.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Armor
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <p>
+      Gain 2 Armor with 1 DR.
+    </p>
+    <p>
+      Lose 2 movement.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Rocket Boots
+  </span>
+  <div class='image-container'>
+    <span>Micro plasma engines installed into the boot armor.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#9679;&#9679;</span>&nbsp;Leg
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Bonus Action
+    </p>
+    <p>
+      Move up to your movement in a straight line for each power.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Targeting Tools
+  </span>
+  <div class='image-container'>
+    <span>Zoom lenses and guidance chips assist in targeting.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#9679;&#9679;&#9679;&#9679;</span>&nbsp;Head
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <p>
+      Bonus Action
+    </p>
+    <p>
+      Requires full power.
+    </p>
+    <p>
+      Announce a number 1-4. On your next attack reroll dice showing that number.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Blue Key Card
+  </span>
+  <div class='image-container'>
+    <span>A small blue key card.</span>
+  </div>
+  <div class='text-container'>
+    <p>
+      Can be used to unlock certain doors.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Nanite Pack
+  </span>
+  <div class='image-container'>
+    <span>A disposable pack of armor repairing nanites.</span>
+  </div>
+  <div class='text-container'>
+    <p>
+      Discard to heal 1 armor.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Energized Assault
+  </span>
+  <div class='image-container'>
+    <span>You overcharge an attack beyond what should be possible. Your reactor needs a moment to recover</span>
+  </div>
+  <div class='text-container'>
+    <p>
+      After any attack you may move Power to unallocated. For each power after the first that attack deals 1 extra damage divided as you chose among all targets.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Trusty Weapon
+  </span>
+  <div class='image-container'>
+    <span>You know every circuit of this weapon.</span>
+  </div>
+  <div class='text-container'>
+    <p>
+      At the beginning of each dive select one item with an attack action. When using that item to attack reroll 1s.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Plasma Capacitor
+  </span>
+  <div class='image-container'>
+    <span>A small subspace capacitor stores plasma for a massive shot.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Weapon Mod
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Spend 2 power: If your next attack hits it becomes a line attack and deals 1 extra damage.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Teleporter
+  </span>
+  <div class='image-container'>
+    <span>Basic Teleporter</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Teleporter
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <p>
+      Free Action.
+    </p>
+    <p>
+      Return to base.
+    </p>
+  </div>
+</div>
+</body>
+</html>

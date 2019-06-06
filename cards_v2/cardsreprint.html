@@ -1,0 +1,397 @@
+<html>
+<head>
+<style>
+body{
+  width: 8.5in;
+  font-size: 0;
+  font-family: Helvetica;
+}
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  vertical-align: top;
+}
+div.card {
+  width: 1.625in;
+  height: 2.5in;
+  border: 1px solid #2d3436;
+  border-radius: .1in;
+  padding: .1in;
+}
+
+span.title {
+  font-size: .12in;
+  font-weight: bold;
+}
+
+div.image-container {
+  border: 1px solid #dfe6e9;
+  width: 1.425in;
+  height: .75in;
+  margin-bottom: .1in;
+}
+
+div.image-container span {
+  display: block;
+  width: 100%;
+  font-size: .1in;
+  font-style: italic;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.text-container {
+  border: 1px solid #dfe6e9;
+  width: 1.425in;
+  height: 1.25in;
+  font-size: .13in;
+  color: #2d3436;
+  position: relative;
+}
+
+div.text-container span.lower-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.text-container span.lower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+div.text-container span.uses {
+  color: #2d3436;
+}
+
+div.text-container span.power {
+  color: #2d3436;
+}
+
+div.text-container p {
+  margin: 0;
+}
+
+</style>
+</head>
+<body>
+<div class='card'>
+  <span class='title'>
+    Plasma Cannon
+  </span>
+  <div class='image-container'>
+    <span>A small arm cannon firing yellow plasma bolts.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Arm
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;&#9632;</span></span>
+    <p>
+      Standard Action.
+    </p>
+    <p>
+      Range 6 attack.
+    </p>
+    <p>
+      Roll 1 die per power.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Plasma Capacitor
+  </span>
+  <div class='image-container'>
+    <span>A small subspace capacitor stores plasma for a massive shot.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Weapon Mod
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Spend 2 power: If your next attack hits it becomes a line attack and deals 1 extra damage.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Starter Armor
+  </span>
+  <div class='image-container'>
+    <span>A light cheap alloy.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Armor
+    </span>
+    <span class='lower-right'><span class='power'></span></span>
+    <p>
+      Gain 1 Armor with DR 1.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Bomb Fab
+  </span>
+  <div class='image-container'>
+    <span>An arm mounted bomb fabricator.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#9679;&#9679;</span>&nbsp;Arm
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;&#9632;</span></span>
+    <p>
+      Standard Action.
+    </p>
+    <p>
+      Requires full power
+    </p>
+    <p>
+      Range 6 burst 1 attack.
+    </p>
+    <p>
+      Roll 5 dice.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Frame
+  </span>
+  <div class='image-container'>
+    <span>A basic well rounded frame.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'></span>Frame
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <span class='lower-right'><span class='power'></span></span>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Unallocated Power
+  </span>
+  <div class='image-container'>
+    <span>Unused Power</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'></span>
+    </span>
+    <span class='lower-right'><span class='power'></span></span>
+    <span class='lower-right'><span class='power'></span></span>
+    <p>
+      If this is the only card with power your robot explodes.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Standing Turret v1
+  </span>
+  <div class='image-container'>
+    <span>A small automated turret</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679;&#9679; Enemy
+    </span>
+    <p>
+      Move 0.
+    </p>
+    <p>
+      Range 10 Attack.
+    </p>
+    <p>
+      Roll 2 dice with mod 1.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Rover Bot v1
+  </span>
+  <div class='image-container'>
+    <span>A small trashcan looking guard bot. Seems poised to charge.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679; Enemy
+    </span>
+    <span class='lower-right'>
+      &#9632;
+    </span>
+    <p>
+      Move 3.
+    </p>
+    <p>
+       Melee Attack.
+    </p>
+    <p>
+      Roll 2 dice mod 2.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Nanite Bot v1
+  </span>
+  <div class='image-container'>
+    <span>Small stubby legged robot exudes a cloud of nanites.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679; Enemy
+    </span>
+    <span class='lower-right'>
+    </span>
+    <p>
+      Move 1.
+    </p>
+    <p>
+       Melee Attack.
+    </p>
+    <p>
+      Roll 1 die mod 3.
+    </p>
+    <p>
+      Bonus Action
+    </p>
+    <p>
+      Heals 1 in Burst 1 to others.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Basic Teleporter
+  </span>
+  <div class='image-container'>
+    <span>Basic Teleporter</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Teleporter
+    </span>
+    <span class='lower-right'><span class='power'>&#9632;</span></span>
+    <p>
+      Free Action.
+    </p>
+    <p>
+      Return to base.
+    </p>
+  </div>
+</div>
+
+<div class='card'>
+  <span class='title'>
+    Basic Reactor
+  </span>
+  <div class='image-container'>
+    <span>A weak general purpose reactor.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      <span class='uses'>&#8734;</span>&nbsp;Reactor
+    </span>
+    <p>
+      Gain 6 max power.
+    </p>
+    <p>
+      Capacitance 1.
+    </p>
+  </div>
+</div><div class='card'>
+  <span class='title'>
+    Rover Bot v2
+  </span>
+  <div class='image-container'>
+    <span>A small trashcan looking guard bot. Hash a small mounted plasma gun.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679;&#9679; Enemy
+    </span>
+    <span class='lower-right'>
+      &#9632;&#9632;
+    </span>
+    <p>
+      Move 3.
+    </p>
+    <p>
+       Melee Attack.
+    </p>
+    <p>
+      Roll 1 dice mod 2.
+    </p>
+    <p>
+       Range 4 Attack.
+    </p>
+    <p>
+      Roll 2 dice mod 2.
+    </p>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Mounted Camera
+  </span>
+  <div class='image-container'>
+    <span>A small mounted camera seems to peer down at you with a red glare/span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679;&#9679;&#9679;&#9679; Enemy
+    </span>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    Mounted Camera
+  </span>
+  <div class='image-container'>
+    <span>A small mounted camera seems to peer down at you with a red glare/span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679;&#9679;&#9679;&#9679; Enemy
+    </span>
+  </div>
+</div>
+<div class='card'>
+  <span class='title'>
+    DEMOTRON
+  </span>
+  <div class='image-container'>
+    <span>This massive hulking beast has a single massive arm that it swings with destructive power.</span>
+  </div>
+  <div class='text-container'>
+    <span class='lower-left'>
+      &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679; DR 3 Enemy
+    </span>
+    <span class='lower-right'><span class='power'></span></span>
+    <p>
+      Move 1.
+    </p>
+    <p>
+      Burst Close Attack.
+    </p>
+    <p>
+      Roll 10 Dice. A wild hammer swing.
+    </p>
+  </div>
+</div>
+</body>
+</html>

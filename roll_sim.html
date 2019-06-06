@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <script>
+      var simulate = function(pool, mod, simulations = 500000) {
+        var successCounts = [];
+        for (var i = 0; i < simulations; i++) {
+          var rolls = [];
+          var explosions = [];
+          for (var r = 0; r < pool; r++) {
+            var roll = Math.floor(Math.random() * 6) + 1;
+            rolls.push(roll);
+            if (roll == 6) {
+              explosions.push(Math.floor(Math.random() * 6) + 1);
+            }
+          }
+          
+          //Reverse sort
+          rolls.sort(function(a,b){return b - a});
+          
+          //Go through normal mods tallying successes
+          var remainingMod = mod;
+          
+          var successes = 0;
+          rolls.forEach(function(roll) {
+            if (roll >= 5) {
+              successes += 1;
+            } else if (roll + remainingMod >= 5) {
+              successes += 1;
+              remainingMod -= (5 - roll);
+            }
+          });
+          explosions.forEach(function(roll) {
+            if (roll >= 5) {
+              successes += 1;
+            }
+          });
+          
+          successCounts.push(successes);
+        }
+        results = successCounts.reduce(countSuccesses, {});
+        var buckets = Object.keys(results).sort(function(a,b){return a - b;});
+        buckets.forEach(function(b) {
+          var percentage = Math.floor((results[b] / simulations) * 10000) / 100;
+          console.log(b + ': ' + percentage);
+        });
+      };
+      
+      var countSuccesses = function(acc, curr) {
+        if (typeof acc[curr] == 'undefined') {
+          acc[curr] = 1;
+        } else {
+          acc[curr] += 1;
+        }
+        return acc;
+      };
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

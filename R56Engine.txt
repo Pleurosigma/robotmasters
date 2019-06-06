@@ -1,0 +1,62 @@
+R56Engine
+=========
+
+The R56Engine is a pool based success counting dice rolling system using only d6s.
+
+Test Basics
+-----------
+
+A test in R56 involves rolling your pool of d6s and determining your final success count. Each test has the following properties.
+
+Pool - The number of d6s you roll. This always starts at 0 and is modified by items, abilities, and stats.
+
+A Success - At the end of a test any die showing a 5 or 6 is considered a success.
+
+Target Number- This is the minimum number of successes required to get a positive result on a test. This number is based on the difficulty of the task.
+
+Unbounded Result - An unbounded test will have greater results with additional successes after the target number.
+
+e.g. An attack is normally an Unbounded Target 1 Test. Only a single success is required to hit, but additional successes cause more damage.
+
+Exploding 6s
+------------
+
+Immediately following a test's initial roll the number of natural 6 results are counted. For each natural 6 the player may roll another die making up their exploded pool. Exploded dice do not explode again, and can rarely be used by abilities.
+
+Mod Points
+----------
+
+A player may have a pool of 'mod points' based on the type of test. These points can be positive or negative.
+
+Mod points can be applied to the individual dice in a roll to change their amount. Mod points may be split among different dice as desired.
+
+e.g. A player is rolling 3d6 with 2 mod points. They roll 4, 4, 1. They use a single mod point on each 4 and change them to 5. Their roll is now 2 successes instead of 0.
+
+Negative mod points must be spend before successes can be totaled (unless all remaining dice show 1). Modified 6s do not explode and exploded dice cannot be modified.
+
+Spending Dice and Pips
+----------------------
+
+The R56 engine encourages having items and abilities that involve the spending of dice and pips to modify the result of an action. e.g. Spend dice to turn a single attack into a multi attack.
+
+Spending dice comes in two forms: before and after the initial roll. Spending a die before the roll means it is never rolled. Spending a die after the initial roll means it is removed from the pool.
+
+e.g. Spend an unrolled die: On a hit the target is stunned. Spend a die: Roll another die, limit 1 per test. Spend a 4: On a hit attack chains to another target within 2 squares.
+
+Spending Pips can only be done after the roll. It can involve spending any number of dice to achive the target pip number. This can potentially give value to dice that were not a success. If a successful die is spent it will not count toward the number of successes.
+
+e.g. Spend 12 pips: On a hit double the damage.
+
+Exploding dice cannot be spent.
+
+Make Pips Matter
+----------------
+
+5 and 6 always matter since they are a success. However, the R56Engine encourages having items or abilites that care about other pip amounts as well. On top of spending dice there are other ways to make pips matter.
+
+1. Reroll - An item or ability may allow you to reroll dice of a certain value. Unless specified this does not include exploded dice.
+
+2. Convert - An item or ability may allow you to convert two dice of a specific value to a single die of another value.
+
+3. Whatever the heck else the dm comes out with.
+
